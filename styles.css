@@ -1,0 +1,146 @@
+.container{
+width:100%;
+min-height: 100vh;
+padding: 10px;
+/* background-image:linear-gradient(123deg, red,blue); */
+}
+.todolist{
+    width:100%;
+    max-width:500px;
+   background-image:linear-gradient(rgb(238, 255, 0),rgb(255, 115, 0));
+    margin:100px auto;
+    padding:40px 30px 70px;
+    border-radius: 20px;
+
+}
+img{
+    height:40px;
+    width:40px;
+}
+h1{
+    display:flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: fantasy;
+    font-size: 40px;
+    padding-left:25px;
+    color:rgb(17, 16, 16);
+    
+}
+h1 img{
+    margin-left: 10px;
+    
+}
+.addinput{
+    display: flex;
+     align-items: center; 
+    justify-content: space-between;
+    padding-left:20px ;
+    margin-bottom: 25px;
+    border-radius: 30px;
+}
+input{
+    flex:1;
+    border:none;
+    outline: none;
+    background: transparent; 
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: inset 1px 1px 5px 1px;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(224, 222, 222);
+    height: 30px;
+    justify-content: space-around;
+    font-size: 25px;
+}
+/* button{
+    height:50px;
+    width: 75px;
+    font-size: 20px;
+    border-radius: 11px; 
+    background: rgb(0, 238, 255);
+    overflow:hidden ;
+    box-shadow: inset 1px 1px 5px 1px;
+    cursor:pointer; 
+    font-family:fantasy ; 
+    color:rgb(22, 18, 243);
+    
+} */
+ul li{
+    font-size: 30px;
+    list-style: none;
+    padding: 12px 20px 20px 33px;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position:absolute;
+    height:28px;
+    width:40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-image:url(black.png) ;
+    left: -20px;
+    height: 38px;
+    top: 10px;
+}
+ul li.tick{
+    text-decoration: line-through;
+    color: white;
+}
+ul li.tick::before{
+    background-image:url(check.jpg) ;
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width:40px;
+    height:40px;
+    font-size: 40px; 
+    cursor: pointer;
+    text-align: center;
+    border-radius: 50%;
+
+}
+ul li span:hover{
+    background: rgb(196, 190, 190);
+
+}
+.heading{
+    animation: blink 10s linear infinite;
+}
+@keyframes blink{
+    50%{
+        color:rgb(255, 255, 255);
+    }
+
+}
+/* .add{
+    animation: blink 1s linear infinite;
+}
+@keyframes blink{
+    50%{
+        color:rgb(243, 97, 13);
+    }
+
+} */
+
+#add{
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    height:50px;
+    width:64px;
+    background-color:maroon;
+    color: white;
+    cursor: pointer;
+    transition: .5s;
+    margin: 0.25rem;
+}
+.i1{
+    font-size: 20px;
+}
